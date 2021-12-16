@@ -1,0 +1,20 @@
+{
+    "GroupsName": [
+        "ИС125ус",
+        "ИС125анусус"
+    ],
+    "Lessons": [
+        {
+            "LessonName": "Менеджмент",
+            "Professor": "Сметана"
+        },
+        {
+            "LessonName": "Экономика",
+            "Professor": "Виктор"
+        },
+        {
+            "LessonName": "Эротика",
+            "Professor": "Петр"
+        }
+    ]
+}
