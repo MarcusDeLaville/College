@@ -22,6 +22,7 @@ public class StartScreen : MonoBehaviour
     private void Awake()
     {
         PlayAnimation();
+        _dropdown.value = 77;
     }
 
     private void OnEnable()
@@ -44,6 +45,8 @@ public class StartScreen : MonoBehaviour
 
     private void OnGroupSelected(int index)
     {
+        
+        
         Debug.Log($"Selected group index: {index}");
         _panel.DOFade(0, 0.5f).SetDelay(0.3f);
     }

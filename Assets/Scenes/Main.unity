@@ -792,7 +792,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.079, y: 0.11481956}
   m_AnchorMax: {x: 0.19943993, y: 0.7368196}
-  m_AnchoredPosition: {x: -2.5, y: 0.24300385}
+  m_AnchoredPosition: {x: -2.5, y: 0.24301147}
   m_SizeDelta: {x: 7, y: -9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &478409091
@@ -1752,7 +1752,7 @@ MonoBehaviour:
   m_CaptionImage: {fileID: 0}
   m_ItemText: {fileID: 568089247}
   m_ItemImage: {fileID: 0}
-  m_Value: 1
+  m_Value: 0
   m_Options:
     m_Options:
     - m_Text: "000684\u0418\u0411"
@@ -2065,7 +2065,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "006858\u0413\u0411"
+  m_Text: "000684\u0418\u0411"
 --- !u!222 &1559136292
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2308,7 +2308,7 @@ MonoBehaviour:
   _savePath: 
   _saveFileName: data.json
   _groups:
-  - Name: "\u0423\u041F\u041A170\u041A"
+  - Name: "090204-\u04181\u0430-\u043E18"
     Weeks:
     - Days:
       - Name: "\u041F\u043E\u043D\u0435\u0434\u0435\u043B\u044C\u043D\u0438\u043A"
@@ -2371,16 +2371,308 @@ MonoBehaviour:
             \u0413"
           Auditory: 441
       - Name: "\u0427\u0435\u0442\u0432\u0435\u0440\u0433"
-        Lessons: []
+        Lessons:
+        - LessonName: "\u041B\u0415\u041A \u042D\u043A\u0441\u043F\u0443\u043B\u0430\u0442\u0430\u0446\u0438\u044F
+            \u0418\u0421"
+          Professor: "\u041B\u043E\u0441\u0435\u0432 \u0412 \u0410"
+          Auditory: 518
+        - LessonName: "\u041F\u0420  \u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430
+            Web \u0438 Shop \u043F\u0440."
+          Professor: "\u041C\u0430\u0442\u0443\u0448\u043A\u0438\u043D\u0430 \u0415
+            \u0413"
+          Auditory: 514
+        - LessonName: "\u041F\u0420 \u0418\u043D\u0444\u043E\u0440\u043C. \u0422\u0435\u0445\u043D.
+            \u0418\u0421"
+          Professor: "\u0424\u0430\u0441\u0442\u043E\u0432 \u0418 \u041E "
+          Auditory: 520
+        - LessonName: "\u041F\u0420 \u041C\u0435\u0442\u043E\u0434\u044B \u0438 \u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0430
+            \u043F\u0440\u043E\u0435\u043A\u0442. \u0418\u0421"
+          Professor: "\u041C\u0430\u0442\u0443\u0448\u043A\u0438\u043D\u0430 \u0415
+            \u0413"
+          Auditory: 441
+        - LessonName: "\u041F\u0420 \u0424\u0438\u0437\u0438\u0447\u0435\u0441\u043A\u0430\u044F
+            \u043A\u0443\u043B\u044C\u0442\u0443\u0440\u0430"
+          Professor: "\u0416\u0435\u043B\u0442\u0443\u0448\u043A\u0438\u043D\u0430
+            \u0415 \u0412"
+          Auditory: "\u0421\u043F\u043E\u0440\u0442.\u0417."
       - Name: "\u041F\u044F\u0442\u043D\u0438\u0446\u0430"
-        Lessons: []
+        Lessons:
+        - LessonName: "\u041F\u0420 \u042D\u043A\u0441\u043F\u0443\u043B\u0430\u0442\u0430\u0446\u0438\u044F
+            \u0418\u0421"
+          Professor: "\u041B\u043E\u0441\u0435\u0432 \u0412 \u0410"
+          Auditory: 253
+        - LessonName: "\u041B\u0415\u041A \u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430
+            Web \u0438 Shop \u043F\u0440."
+          Professor: "\u041C\u0430\u0442\u0443\u0448\u043A\u0438\u043D\u0430 \u0415
+            \u0413"
+          Auditory: 441
+        - LessonName: "\u041F\u0420 \u0418\u043D\u0444\u043E\u0440\u043C. \u0422\u0435\u0445\u043D.
+            \u0418\u0421"
+          Professor: "\u0424\u0430\u0441\u0442\u043E\u0432 \u0418 \u041E"
+          Auditory: 520
+        - LessonName: "\u041B\u0415\u041A \u041C\u0435\u0442\u043E\u0434\u044B \u0438
+            \u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0430 \u043F\u0440\u043E\u0435\u043A\u0442.
+            \u0418\u0421"
+          Professor: "\u041C\u0430\u0442\u0443\u0448\u043A\u0438\u043D\u0430 \u0415
+            \u0413"
+          Auditory: 311
+        - LessonName: "\u041B\u0435\u043A \u0421\u043E\u0446. \u041F\u0441\u0438\u0445.
+            \u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438"
+          Professor: "\u0411\u043E\u043D\u0434\u0430\u0440\u0435\u043D\u043A\u043E
+            \u041B \u0412"
+          Auditory: 242
       - Name: "\u0421\u0443\u0431\u0431\u043E\u0442\u0430"
-        Lessons: []
-  - Name: "\u0411\u0411\u041A456\u041A"
+        Lessons:
+        - LessonName: 
+          Professor: 
+          Auditory: 
+        - LessonName: "\u041B\u0415\u041A \u0411\u0435\u0437\u043E\u043F\u0430\u0441\u043D\u043E\u0441\u0442\u044C
+            \u0436\u0438\u0437\u043D."
+          Professor: "\u0411\u0435\u043B\u043E\u0443\u0441\u043E\u0432\u0430 \u0415
+            \u0413 "
+          Auditory: 332
+        - LessonName: "\u041B\u0415\u041A \u0423\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u0435
+            \u043F\u0440\u043E\u0435\u043A\u0442\u0430\u043C\u0438"
+          Professor: "\u041C\u0430\u0442\u0443\u0448\u043A\u0438\u043D\u0430 \u0415
+            \u0413"
+          Auditory: 311
+        - LessonName: "\u041F\u0420 \u041C\u0435\u0442\u043E\u0434\u044B \u0438 \u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0430
+            \u043F\u0440\u043E\u0435\u043A\u0442. \u0418\u0421"
+          Professor: "\u041C\u0430\u0442\u0443\u0448\u043A\u0438\u043D\u0430 \u0415
+            \u0413"
+          Auditory: 441
+  - Name: "070214-\u04181\u0431-\u043E18 "
     Weeks:
-    - Days: []
-  - Name: 9756
-    Weeks: []
+    - Days:
+      - Name: "\u041F\u043E\u043D\u0435\u0434\u0435\u043B\u044C\u043D\u0438\u043A"
+        Lessons:
+        - LessonName: "\u041F\u0420 \u0421\u043E\u0446. \u041F\u0441\u0438\u0445.
+            \u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438"
+          Professor: "\u0411\u043E\u043D\u0434\u0430\u0440\u0435\u043D\u043A\u043E
+            \u041B \u0412"
+          Auditory: 328
+        - LessonName: "\u041F\u0420 \u0418\u043D\u0444\u043E\u0440\u043C. \u0422\u0435\u0445\u043D.
+            \u0418\u0421"
+          Professor: "\u0424\u0430\u0441\u0442\u043E\u0432 \u0418 \u041E "
+          Auditory: 241
+        - LessonName: "\u041F\u0420 \u0418\u043D\u0444\u043E\u0440\u043C. \u0422\u0435\u0445\u043D.
+            \u0418\u0421"
+          Professor: "\u0424\u0430\u0441\u0442\u043E\u0432 \u0418 \u041E "
+          Auditory: 311
+        - LessonName: "\u0412\u044B\u043F\u043E\u043B\u043D\u044F\u0435\u0442\u0441\u044F
+            \u043F\u043E\u043B\u0443\u0447\u0435\u043D\u0438\u0435 \u0434\u0430\u043D\u043D\u044B\u0445.
+            \u041F\u043E\u0434\u043E\u0436\u0434\u0438\u0442\u0435 \u043D\u0435\u0441\u043A\u043E\u043B\u044C\u043A\u043E
+            \u0441\u0435\u043A\u0443\u043D\u0434, \u0430 \u0437\u0430\u0442\u0435\u043C
+            \u0435\u0449\u0435 \u0440\u0430\u0437 \u043F\u043E\u043F\u0440\u043E\u0431\u0443\u0439\u0442\u0435
+            \u0432\u044B\u0440\u0435\u0437\u0430\u0442\u044C \u0438\u043B\u0438 \u0441\u043A\u043E\u043F\u0438\u0440\u043E\u0432\u0430\u0442\u044C."
+          Professor: "\u041C\u0430\u0442\u0443\u0448\u043A\u0438\u043D\u0430 \u0415
+            \u0413"
+          Auditory: 241
+      - Name: "\u0412\u0442\u043E\u0440\u043D\u0438\u043A"
+        Lessons:
+        - LessonName: 
+          Professor: 
+          Auditory: 
+        - LessonName: 
+          Professor: 
+          Auditory: 
+        - LessonName: 
+          Professor: 
+          Auditory: 
+        - LessonName: 
+          Professor: 
+          Auditory: 
+        - LessonName: "\u041F\u0420 \u0424\u0438\u0437\u0438\u0447\u0435\u0441\u043A\u0430\u044F
+            \u043A\u0443\u043B\u044C\u0442\u0443\u0440\u0430"
+          Professor: "\u0416\u0435\u043B\u0442\u0443\u0448\u043A\u0438\u043D\u0430
+            \u0415 \u0412"
+          Auditory: "\u0421\u043F\u043E\u0440\u0442.\u0417."
+      - Name: "\u0421\u0440\u0435\u0434\u0430"
+        Lessons:
+        - LessonName: "\u041B\u0415\u041A \u0423\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u0435
+            \u043F\u0440\u043E\u0435\u043A\u0442\u0430\u043C\u0438"
+          Professor: "\u041C\u0430\u0442\u0443\u0448\u043A\u0438\u043D\u0430 \u0415
+            \u0413"
+          Auditory: 311
+        - LessonName: "\u041F\u0420 \u0423\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u0435
+            \u043F\u0440\u043E\u0435\u043A\u0442\u0430\u043C\u0438"
+          Professor: "\u041C\u0430\u0442\u0443\u0448\u043A\u0438\u043D\u0430 \u0415
+            \u0413"
+          Auditory: 514
+        - LessonName: "\u041A\u041F \u0423\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u0435
+            \u043F\u0440\u043E\u0435\u043A\u0442\u0430\u043C\u0438"
+          Professor: "\u041C\u0430\u0442\u0443\u0448\u043A\u0438\u043D\u0430 \u0415
+            \u0413"
+          Auditory: 514
+        - LessonName: "\u041F\u0420 \u041C\u0435\u0442\u043E\u0434\u044B \u0438 \u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0430
+            \u043F\u0440\u043E\u0435\u043A\u0442. \u0418\u0421"
+          Professor: "\u041C\u0430\u0442\u0443\u0448\u043A\u0438\u043D\u0430 \u0415
+            \u0413"
+          Auditory: 439
+      - Name: "\u0427\u0435\u0442\u0432\u0435\u0440\u0433"
+        Lessons:
+        - LessonName: "\u041B\u0415\u041A \u042D\u043A\u0441\u043F\u0443\u043B\u0430\u0442\u0430\u0446\u0438\u044F
+            \u0418\u0421"
+          Professor: "\u041B\u043E\u0441\u0435\u0432 \u0412 \u0410"
+          Auditory: 518
+        - LessonName: "\u041F\u0420 \u042D\u043A\u0441\u043F\u0443\u043B\u0430\u0442\u0430\u0446\u0438\u044F
+            \u0418\u0421"
+          Professor: "\u041B\u043E\u0441\u0435\u0432 \u0412 \u0410"
+          Auditory: 520
+        - LessonName: "\u041B\u0415\u041A \u041C\u0435\u0442\u043E\u0434\u044B \u0438
+            \u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0430 \u043F\u0440\u043E\u0435\u043A\u0442.
+            \u0418\u0421"
+          Professor: "\u041C\u0430\u0442\u0443\u0448\u043A\u0438\u043D\u0430 \u0415
+            \u0413"
+          Auditory: 514
+      - Name: "\u041F\u044F\u0442\u043D\u0438\u0446\u0430"
+        Lessons:
+        - LessonName: "\u041F\u0420 \u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430
+            Web \u0438 Shop \u043F\u0440."
+          Professor: "\u041C\u0430\u0442\u0443\u0448\u043A\u0438\u043D\u0430 \u0415
+            \u0413"
+          Auditory: 514
+        - LessonName: "\u041B\u0415\u041A \u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430
+            Web \u0438 Shop \u043F\u0440."
+          Professor: "\u041C\u0430\u0442\u0443\u0448\u043A\u0438\u043D\u0430 \u0415
+            \u0413"
+          Auditory: 441
+        - LessonName: "\u041B\u0415\u041A \u0411\u0435\u0437\u043E\u043F\u0430\u0441\u043D\u043E\u0441\u0442\u044C
+            \u0436\u0438\u0437\u043D."
+          Professor: "\u0411\u0435\u043B\u043E\u0443\u0441\u043E\u0432\u0430 \u0415
+            \u0413"
+          Auditory: 321
+        - LessonName: "\u041B\u0415\u041A \u041C\u0435\u0442\u043E\u0434\u044B \u0438
+            \u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0430 \u043F\u0440\u043E\u0435\u043A\u0442.
+            \u0418\u0421"
+          Professor: "\u041C\u0430\u0442\u0443\u0448\u043A\u0438\u043D\u0430 \u0415
+            \u0413"
+          Auditory: 311
+        - LessonName: "\u041B\u0435\u043A \u0421\u043E\u0446. \u041F\u0441\u0438\u0445.
+            \u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438"
+          Professor: "\u0411\u043E\u043D\u0434\u0430\u0440\u0435\u043D\u043A\u043E
+            \u041B \u0412"
+          Auditory: 242
+      - Name: "\u0421\u0443\u0431\u0431\u043E\u0442\u0430"
+        Lessons:
+        - LessonName: "\u041F\u0420 \u0418\u043D\u0444\u043E\u0440\u043C. \u0422\u0435\u0445\u043D.
+            \u0418\u0421"
+          Professor: "\u0424\u0430\u0441\u0442\u043E\u0432 \u0418 \u041E"
+          Auditory: 241
+        - LessonName: "\u041B\u0415\u041A \u0411\u0435\u0437\u043E\u043F\u0430\u0441\u043D\u043E\u0441\u0442\u044C
+            \u0436\u0438\u0437\u043D."
+          Professor: "\u0411\u0435\u043B\u043E\u0443\u0441\u043E\u0432\u0430 \u0415
+            \u0413 "
+          Auditory: 332
+        - LessonName: "\u041B\u0415\u041A \u0423\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u0435
+            \u043F\u0440\u043E\u0435\u043A\u0442\u0430\u043C\u0438"
+          Professor: "\u041C\u0430\u0442\u0443\u0448\u043A\u0438\u043D\u0430 \u0415
+            \u0413"
+          Auditory: 311
+  - Name: "080201-\u04211-\u043E18"
+    Weeks:
+    - Days:
+      - Name: "\u041F\u043E\u043D\u0435\u0434\u0435\u043B\u044C\u043D\u0438\u043A"
+        Lessons:
+        - LessonName: "\u041B\u0415\u041A \u041F\u0440\u043E\u0435\u043A\u0442. \u0437\u0434\u0430\u043D\u0438\u0439
+            \u0438 \u0441\u043E\u043E\u0440."
+          Professor: "\u0427\u0438\u0440\u0441\u043A\u043E\u0439 \u0410 \u0421 "
+          Auditory: 330
+        - LessonName: "\u041B\u0415\u041A \u0423\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u0435
+            \u0434\u0435\u044F\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C\u044E
+            \u0441\u0442\u0440\u0443\u043A. \u043F\u043E\u0434\u0440."
+          Professor: "\u041B\u0435\u0432\u0438\u043D \u0420 \u041D"
+          Auditory: 330
+        - LessonName: "\u041F\u0420 \u0411\u0435\u0437\u043E\u043F\u0430\u043D\u0441\u043E\u0441\u0442\u044C
+            \u0436\u0438\u0437\u043D."
+          Professor: "\u0411\u0435\u043B\u043E\u0443\u0441\u043E\u0432\u0430 \u0415
+            \u0413 "
+          Auditory: 321
+        - LessonName: "\u041F\u0420 \u0424\u0438\u0437\u0438\u0447\u0435\u0441\u043A\u0430\u044F
+            \u043A\u0443\u043B\u044C\u0442\u0443\u0440\u0430"
+          Professor: "\u0416\u0435\u043B\u0442\u0443\u0448\u043A\u0438\u043D\u0430
+            \u0415 \u0412"
+          Auditory: "\u0421\u043F\u043E\u0440\u0442.\u0417."
+      - Name: "\u0412\u0442\u043E\u0440\u043D\u0438\u043A"
+        Lessons:
+        - LessonName: 
+          Professor: 
+          Auditory: 
+        - LessonName: "\u041F\u0420 \u0423\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u0435
+            \u0434\u0435\u044F\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C\u044E
+            \u0441\u0442\u0440\u0443\u043A. \u043F\u043E\u0434\u0440."
+          Professor: "\u041B\u0435\u0432\u0438\u043D \u0420 \u041D"
+          Auditory: 320
+        - LessonName: "\u041F\u0420 \u042D\u043A\u0441\u043F\u043B\u0443\u0430\u0442\u0430\u0446\u0438\u044F
+            \u0437\u0434\u0430\u043D\u0438\u0439 \u0438 \u0441\u043E\u043E\u0440\u0443\u0436\u0435\u043D\u0438\u0439"
+          Professor: "\u042F\u043A\u043E\u0432\u043B\u0435\u0432\u0430 \u0418 \u0410"
+          Auditory: 321
+      - Name: "\u0421\u0440\u0435\u0434\u0430"
+        Lessons:
+        - LessonName: 
+          Professor: 
+          Auditory: 
+        - LessonName: 
+          Professor: 
+          Auditory: 
+        - LessonName: 
+          Professor: 
+          Auditory: 
+        - LessonName: "\u041A\u041F \u041F\u0440\u043E\u0435\u043A\u0442\u0438\u0432\u0440\u043E\u0432\u0430\u043D\u0438\u0435
+            \u0437\u0434\u0430\u043D\u0438\u0439 \u0438 \u0441\u043E\u043E\u0440\u0443\u0436\u0435\u043D\u0438\u0439"
+          Professor: "\u0427\u0438\u0440\u0441\u043A\u043E\u0439 \u0410 \u0421"
+          Auditory: 311
+      - Name: "\u0427\u0435\u0442\u0432\u0435\u0440\u0433"
+        Lessons:
+        - LessonName: 
+          Professor: 
+          Auditory: 
+        - LessonName: 
+          Professor: 
+          Auditory: 
+        - LessonName: "\u041B\u0415\u041A \u0411\u0435\u0437\u043E\u043F\u0430\u0441\u043D\u043E\u0441\u0442\u044C
+            \u0436\u0438\u0437\u043D."
+          Professor: "\u0411\u0435\u043B\u043E\u0443\u0441\u043E\u0432\u0430 \u0415
+            \u0413 "
+          Auditory: 332
+        - LessonName: "\u041B\u0415\u041A \u042D\u043A\u0441\u043F\u043B\u0443\u0430\u0442\u0430\u0446\u0438\u044F
+            \u0437\u0434\u0430\u043D\u0438\u0439 \u0438 \u0441\u043E\u043E\u0440\u0443\u0436\u0435\u043D\u0438\u0439"
+          Professor: "\u042F\u043A\u043E\u0432\u043B\u0435\u0432\u0430 \u0418 \u0410"
+          Auditory: 438
+      - Name: "\u041F\u044F\u0442\u043D\u0438\u0446\u0430"
+        Lessons:
+        - LessonName: 
+          Professor: 
+          Auditory: 
+        - LessonName: 
+          Professor: 
+          Auditory: 
+        - LessonName: "\u041B\u0415\u041A \u0421\u043E\u0446. \u041F\u0441\u0438\u0445.
+            \u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438"
+          Professor: "\u0411\u043E\u043D\u0434\u0430\u0440\u0435\u043D\u043A\u043E
+            \u041B \u0412"
+          Auditory: 332
+        - LessonName: "\u041A\u041F \u041F\u0440\u043E\u0435\u043A\u0442 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0430
+            \u0440\u0430\u0431\u043E\u0442"
+          Professor: "\u041B\u0435\u0432\u0438\u043D \u0420 \u041D"
+          Auditory: 320
+      - Name: "\u0421\u0443\u0431\u0431\u043E\u0442\u0430"
+        Lessons:
+        - LessonName: 
+          Professor: 
+          Auditory: 
+        - LessonName: "\u041F\u0420 \u041E\u0440\u0433\u0430\u043D\u0438\u0437\u0430\u0446\u0438\u044F
+            \u0442\u0435\u0445. \u041F\u0440\u043E\u0446\u0435\u0441\u0441\u043E\u0432"
+          Professor: "\u042F\u043A\u043E\u0432\u043B\u0435\u0432\u0430 \u0418 \u0410"
+          Auditory: 321
+        - LessonName: "\u041F\u0420 \u041E\u0440\u0433\u0430\u043D\u0438\u0437\u0430\u0446\u0438\u044F
+            \u0442\u0435\u0445. \u041F\u0440\u043E\u0446\u0435\u0441\u0441\u043E\u0432"
+          Professor: "\u042F\u043A\u043E\u0432\u043B\u0435\u0432\u0430 \u0418 \u0410"
+          Auditory: 320
+        - LessonName: "\u041B\u0415\u041A \u0420\u0435\u043A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0446\u0438\u044F
+            \u0437\u0434\u0430\u043D\u0438\u0439 \u0438 \u0441\u043E\u043E\u0440\u0443\u0436\u0435\u043D\u0438\u0439"
+          Professor: "\u0421\u0435\u043C\u0438\u043D\u0430 \u0415 \u0410"
+          Auditory: 320
 --- !u!4 &1755939204
 Transform:
   m_ObjectHideFlags: 0
@@ -2411,6 +2703,7 @@ MonoBehaviour:
   _groupChanger: {fileID: 1451774371}
   _daysCorner: {fileID: 1311419199}
   _currentGroup: 0
+  _currentDay: 0
   _dayUis: []
   _dayPrefab: {fileID: 2686181555892077170, guid: c30926a91d5b494459f8e6175d5d3ba3,
     type: 3}
@@ -2418,6 +2711,7 @@ MonoBehaviour:
     type: 3}
   _back: {fileID: 478409091}
   _startPanel: {fileID: 1505409376}
+  _swipeDetection: {fileID: 463307958}
 --- !u!1 &1780118018
 GameObject:
   m_ObjectHideFlags: 1

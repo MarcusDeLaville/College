@@ -8,6 +8,8 @@ public class LessonUI : MonoBehaviour
         // public string LessonName;
         // public string TeacherName;
         // public string Auditory;
+
+        public CanvasGroup CanvasGroup;
         
         public Text TimeText;
         public Text LessonNameText;

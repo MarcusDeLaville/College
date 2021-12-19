@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using DG.Tweening;
+using MagneticScrollView;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,7 +13,8 @@ public class ClipboardBuilder : MonoBehaviour
     [SerializeField] private Transform _daysCorner;
 
     [SerializeField] private int _currentGroup;
-
+    [SerializeField] private int _currentDay;
+    
     [SerializeField] private List<DayUI> _dayUis;
 
     [SerializeField] private DayUI _dayPrefab;
@@ -20,6 +22,8 @@ public class ClipboardBuilder : MonoBehaviour
 
     [SerializeField] private Button _back;
     [SerializeField] private CanvasGroup _startPanel;
+
+    [SerializeField] private SwipeDetection _swipeDetection;
     
     private void Awake()
     {
@@ -36,7 +40,8 @@ public class ClipboardBuilder : MonoBehaviour
     {
         _groupChanger.onValueChanged.AddListener(OnGroupPicked);
         _back.onClick.AddListener(() => _startPanel.DOFade(1f, 0.5f));
-
+        _swipeDetection.swipeEvents[0].callback.AddListener(OnSwipeLeft);
+        _swipeDetection.swipeEvents[1].callback.AddListener(OnSwipeRight);
     }
 
     private void OnDisable()
@@ -47,9 +52,12 @@ public class ClipboardBuilder : MonoBehaviour
     private void OnGroupPicked(int index)
     {
         _currentGroup = index;
+        _currentDay = 0;
         
         ClearAll();
         SpawnDays();
+
+        DelayedCallUtil.DelayedCall(0.7f, () => ShowLessons());
     }
 
     private void SpawnDays()
@@ -97,6 +105,32 @@ public class ClipboardBuilder : MonoBehaviour
         }
     }
 
+    private void ShowLessons()
+    {
+        float delay = 0.3f;
+        float step = 0.3f;
+        
+        for (int i = 0; i < _dayUis[_currentDay].Lessons.Count; i++)
+        {
+            _dayUis[_currentDay].Lessons[i].CanvasGroup.DOFade(1f, delay + (step * i));
+        }
+    }
+
+    private void OnSwipeLeft()
+    {
+        if(_currentDay == _dayUis.Count-1) return;
+        _currentDay++;
+        ShowLessons();
+    }
+    
+    private void OnSwipeRight()
+    {
+        if(_currentDay == 0) return;
+        
+        _currentDay--;
+        ShowLessons();
+    }
+    
     private void ClearAll()
     {
         for (int i = 0; i < _dayUis.Count; i++)
@@ -106,4 +140,6 @@ public class ClipboardBuilder : MonoBehaviour
         
         _dayUis.Clear();
     }
+
+    
 }

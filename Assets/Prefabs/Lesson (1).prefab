@@ -327,6 +327,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4600700155257368063}
   - component: {fileID: 7268724834650082315}
+  - component: {fileID: 626943670328855137}
   m_Layer: 5
   m_Name: Lesson (1)
   m_TagString: Untagged
@@ -369,10 +370,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17c08be4a5cc4cc09fa69dca2317471d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CanvasGroup: {fileID: 626943670328855137}
   TimeText: {fileID: 4600700154596141978}
   LessonNameText: {fileID: 4600700154455278089}
   TeacherNameText: {fileID: 4600700155423929147}
   AuditoryText: {fileID: 4600700154008331114}
+--- !u!225 &626943670328855137
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4600700155257368056}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &4600700155423929126
 GameObject:
   m_ObjectHideFlags: 0
