@@ -1,15 +1,17 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 public class Clipboard : MonoBehaviour
 {
     [SerializeField] private string _savePath;
     [SerializeField] private string _saveFileName = "data.json";
+    
+    [SerializeField] private List<Group>  _groups;
 
-    [SerializeField] private Clipbooard _currentClipdoard;
+    public List<Group> Groups => _groups;
     
     private void Awake()
     {
@@ -24,13 +26,13 @@ public class Clipboard : MonoBehaviour
     [ContextMenu("Save")]
     public void SaveConfig()
     {
-        Clipbooard clipbooard = new Clipbooard
+        Group @group = new Group
         {
-            GroupsName = this._currentClipdoard.GroupsName,     
-            Lessons = this._currentClipdoard.Lessons
+            // GroupsName = this._currentClipdoard.GroupsName,     
+            // Lessons = this._currentClipdoard.Lessons
         };
     
-        string json = JsonUtility.ToJson(clipbooard, true);
+        string json = JsonUtility.ToJson(@group, true);
         File.WriteAllText(_savePath, json);
     }
     
@@ -42,10 +44,10 @@ public class Clipboard : MonoBehaviour
         }
     
         string json = File.ReadAllText(_savePath);
-        Clipbooard _coinsFromJson = JsonUtility.FromJson<Clipbooard>(json);
+        Group _coinsFromJson = JsonUtility.FromJson<Group>(json);
 
-        _currentClipdoard.GroupsName = _coinsFromJson.GroupsName;
-        _currentClipdoard.Lessons = _coinsFromJson.Lessons;
+        // _currentClipdoard.GroupsName = _coinsFromJson.GroupsName;
+        // _currentClipdoard.Lessons = _coinsFromJson.Lessons;
     }
     
     private void OnApplicationQuit()
@@ -61,9 +63,22 @@ public class Clipboard : MonoBehaviour
     }
     
     [Serializable]
-    public struct Clipbooard
+    public struct Group
     {
-        public List<string> GroupsName;
+        public string Name;
+        public List<Week> Weeks;
+    }
+
+    [Serializable]
+    public struct Week
+    {
+        public List<Day> Days;
+    }
+
+    [Serializable]
+    public struct Day
+    {
+        public string Name;
         public List<Lesson> Lessons;
     }
 
@@ -72,4 +87,7 @@ public class Clipboard : MonoBehaviour
     {
         public string LessonName;
         public string Professor;
+        public string Auditory;
     }
+    
+    

@@ -5,21 +5,46 @@ using UnityEngine.UI;
 
 public class StartScreen : MonoBehaviour
 {
-    [SerializeField] private Image _background;
+    [SerializeField] private Image _pickGroup;
     [SerializeField] private Image _logo;
+    [SerializeField] private Text _text;
 
+    [SerializeField] private CanvasGroup _panel;
+    
+    [SerializeField] private Transform _startChanger;
+    [SerializeField] private Transform _doChanger;
+        
+    [SerializeField] private Transform _startLogo;
+    [SerializeField] private Transform _doLogo;
+
+    [SerializeField] private Dropdown _dropdown;
+    
     private void Awake()
     {
         PlayAnimation();
     }
 
+    private void OnEnable()
+    {
+        _dropdown.onValueChanged.AddListener(OnGroupSelected);
+    }
+
     private void PlayAnimation()
     {
-        _logo.transform.DOPunchScale(Vector3.one / 3, 0.6f, 1, 1f).SetDelay(0.1f);
-        _logo.DOFade(0.8f, 0.4f).SetLoops(4, LoopType.Yoyo).onComplete += () =>
-        {
-            _logo.DOFade(0f, 0.2f);
-            _background.DOFade(0f, 0.2f);
-        };
+        _logo.transform.position = _startLogo.position;
+        _pickGroup.transform.position = _startChanger.position;
+        _logo.DOFade(1f, 0.5f);
+        _pickGroup.DOFade(1f, 0).SetDelay(0.5f);
+
+        _logo.transform.DOMove(_doLogo.position, 0.5f).SetDelay(0.5f);
+        _pickGroup.transform.DOMove(_doChanger.position, 0.5f).SetDelay(0.5f);
+
+        _text.DOFade(1f, 0.2f).SetDelay(1f);
+    }
+
+    private void OnGroupSelected(int index)
+    {
+        Debug.Log($"Selected group index: {index}");
+        _panel.DOFade(0, 0.5f).SetDelay(0.3f);
     }
 }
