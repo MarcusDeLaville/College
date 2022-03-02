@@ -1,53 +1,30 @@
-using System;
 using DG.Tweening;
+using UI;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class StartScreen : MonoBehaviour
+public class StartScreen : UIAnimation
 {
     [SerializeField] private Image _pickGroup;
     [SerializeField] private Image _logo;
-    [SerializeField] private Text _text;
+    [SerializeField] private Text _hint;
 
-    [SerializeField] private CanvasGroup _panel;
-    
-    [SerializeField] private Transform _startChanger;
-    [SerializeField] private Transform _doChanger;
+    [SerializeField] private Transform _startChangerPosition;
+    [SerializeField] private Transform _doChangerPosition;
         
-    [SerializeField] private Transform _startLogo;
-    [SerializeField] private Transform _doLogo;
-
-    [SerializeField] private Dropdown _dropdown;
+    [SerializeField] private Transform _startLogoPosition;
+    [SerializeField] private Transform _doLogoPosition;
     
-    private void Awake()
+    public override void Animate()
     {
-        PlayAnimation();
-        _dropdown.value = 77;
-    }
-
-    private void OnEnable()
-    {
-        _dropdown.onValueChanged.AddListener(OnGroupSelected);
-    }
-
-    private void PlayAnimation()
-    {
-        _logo.transform.position = _startLogo.position;
-        _pickGroup.transform.position = _startChanger.position;
+        _logo.transform.position = _startLogoPosition.position;
+        _pickGroup.transform.position = _startChangerPosition.position;
         _logo.DOFade(1f, 0.5f);
         _pickGroup.DOFade(1f, 0).SetDelay(0.5f);
 
-        _logo.transform.DOMove(_doLogo.position, 0.5f).SetDelay(0.5f);
-        _pickGroup.transform.DOMove(_doChanger.position, 0.5f).SetDelay(0.5f);
+        _logo.transform.DOMove(_doLogoPosition.position, 0.5f).SetDelay(0.5f);
+        _pickGroup.transform.DOMove(_doChangerPosition.position, 0.5f).SetDelay(0.5f);
 
-        _text.DOFade(1f, 0.2f).SetDelay(1f);
-    }
-
-    private void OnGroupSelected(int index)
-    {
-        
-        
-        Debug.Log($"Selected group index: {index}");
-        _panel.DOFade(0, 0.5f).SetDelay(0.3f);
+        _hint.DOFade(1f, 0.2f).SetDelay(1f);
     }
 }

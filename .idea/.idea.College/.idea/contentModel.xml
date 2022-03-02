@@ -298,13 +298,11 @@
           <e p="ClipboardBuilder.cs" t="Include" />
           <e p="DayUI.cs" t="Include" />
           <e p="DelayedCallUtil.cs" t="Include" />
+          <e p="GroupsPicker.cs" t="Include" />
           <e p="Json" t="Include">
             <e p="Clipboard.cs" t="Include" />
           </e>
           <e p="LessonUI.cs" t="Include" />
-          <e p="MakeMessages.cs" t="Include" />
-          <e p="MenuSwipe.cs" t="Include" />
-          <e p="Message.cs" t="Include" />
           <e p="PlayFab" t="Include">
             <e p="Data" t="Include">
               <e p="GetStudentData.cs" t="Include" />
@@ -315,13 +313,14 @@
           <e p="UI" t="Include">
             <e p="Animations" t="Include">
               <e p="StartScreen.cs" t="Include" />
+              <e p="UIAnimation.cs" t="Include" />
+              <e p="UpperLogo.cs" t="Include" />
             </e>
             <e p="SwitchPanel.cs" t="Include" />
+            <e p="UIHandler.cs" t="Include" />
           </e>
           <e p="Web" t="Include">
-            <e p="Login.cs" t="Include" />
-            <e p="PostStruct.cs" t="Include" />
-            <e p="Response.cs" t="Include" />
+            <e p="DataRequest.cs" t="Include" />
           </e>
         </e>
         <e p="SoftMask" t="Include">
@@ -391,5 +390,7 @@
     </e>
     <e p="C:\Users\Marcus\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Marcus\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_College.756571930.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Marcus\AppData\Roaming\JetBrains\Rider2020.1\javascript\nodejs\16.14.0\core-modules" t="IncludeRecursive" />
+    <e p="C:\Users\Marcus\AppData\Roaming\JetBrains\Rider2020.1\javascript\nodejs\16.14.0\node-typings\node_modules\@types" t="IncludeRecursive" />
   </component>
 </project>

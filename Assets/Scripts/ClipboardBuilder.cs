@@ -9,7 +9,8 @@ public class ClipboardBuilder : MonoBehaviour
 {
     [SerializeField] private Clipboard _clipboard;
     [SerializeField] private Dropdown _groupChanger;
-
+    [SerializeField] private GroupsPicker _groupsPicker;
+    
     [SerializeField] private Transform _daysCorner;
 
     [SerializeField] private int _currentGroup;
@@ -27,26 +28,21 @@ public class ClipboardBuilder : MonoBehaviour
     
     private void Awake()
     {
-        _groupChanger.options.Clear();
-        
-        foreach (var group in _clipboard.Groups)
-        {
-            Dropdown.OptionData optionData = new Dropdown.OptionData(group.Name);
-            _groupChanger.options.Add(optionData);
-        }
+        _groupsPicker.SetGroups(_clipboard.Groups);
     }
 
     private void OnEnable()
     {
-        _groupChanger.onValueChanged.AddListener(OnGroupPicked);
+        _groupsPicker.GroupPick += OnGroupPicked;
         _back.onClick.AddListener(() => _startPanel.DOFade(1f, 0.5f));
+        // попробовать принимать один колбек свайпа и перенести в единый метод реагирования
         _swipeDetection.swipeEvents[0].callback.AddListener(OnSwipeLeft);
         _swipeDetection.swipeEvents[1].callback.AddListener(OnSwipeRight);
     }
 
     private void OnDisable()
     {
-        _groupChanger.onValueChanged.RemoveListener(OnGroupPicked);
+        _groupsPicker.GroupPick -= OnGroupPicked;
     }
 
     private void OnGroupPicked(int index)
@@ -60,6 +56,7 @@ public class ClipboardBuilder : MonoBehaviour
         DelayedCallUtil.DelayedCall(0.7f, () => ShowLessons());
     }
 
+    //todo: работает но это ебаные спагетти
     private void SpawnDays()
     {
         for (int i = 0; i < _clipboard.Groups[_currentGroup].Weeks[0].Days.Count; i++)
@@ -116,6 +113,7 @@ public class ClipboardBuilder : MonoBehaviour
         }
     }
 
+    //ынести свайпы в другой класс
     private void OnSwipeLeft()
     {
         if(_currentDay == _dayUis.Count-1) return;
